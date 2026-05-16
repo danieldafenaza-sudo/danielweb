@@ -1,63 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Arman Muharrir | Portfolio</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- REMIX ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- CUSTOM CURSOR -->
+  <div class="custom-cursor"></div>
+
 </head>
 
 <body>
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress"></div>
+
+  <!-- ================= ULTRA PRELOADER ================= -->
+  <div class="preloader" id="preloader">
+
+    <!-- GRID -->
+    <div class="loader-grid"></div>
+
+    <!-- GLOW -->
+    <div class="loader-glow glow-1"></div>
+    <div class="loader-glow glow-2"></div>
+
+    <!-- ORBIT -->
+    <div class="loader-orbit orbit-1"></div>
+    <div class="loader-orbit orbit-2"></div>
+
+    <!-- PARTICLES -->
+    <div class="loader-particles">
+
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="loader-content">
+
+      <!-- SCAN LINE -->
+      <div class="loader-scan"></div>
+
+      <!-- LOGO -->
+      <div class="loader-logo">
+
+        <svg viewBox="0 0 300 300" class="am-loader-logo">
+
+          <path class="am-line" d="
+          M150 40
+          L55 240
+          L105 240
+          L150 145
+          L195 240
+          L245 240
+          Z
+        " />
+
+        </svg>
+
+      </div>
+
+      <!-- SMALL -->
+      <span class="loader-small">
+        ARMAN MUHARRIR
+      </span>
+
+      <!-- TITLE -->
+      <h1 class="loader-title">
+
+        <span>P</span>
+        <span>O</span>
+        <span>R</span>
+        <span>T</span>
+        <span>F</span>
+        <span>O</span>
+        <span>L</span>
+        <span>I</span>
+        <span>O</span>
+
+      </h1>
+
+      <!-- CODE TEXT -->
+      <div class="loader-code">
+        INITIALIZING INTERFACE
+      </div>
+
+      <!-- BOTTOM -->
+      <div class="loader-bottom">
+
+        <span class="loader-status" id="loader-status">
+          Building experience
+        </span>
+
+        <span class="loader-percent" id="loader-percent">
+          0%
+        </span>
+
+      </div>
+
+      <!-- LINE -->
+      <div class="loader-line">
+        <span id="loader-progress"></span>
+      </div>
+
+    </div>
+
+  </div>
+
+
   <!-- ================= HEADER ================= -->
-  <header class="header" id="header">
+  <header class="header">
 
-    <div class="nav-container">
+    <nav class="nav">
 
-      <!-- LOGO / BRAND -->
-      <a href="#home" class="logo">
-        <span class="logo-icon">D</span>
-        <span class="logo-text">Daniel<span>Fendisa</span></span>
+      <!-- LOGO -->
+      <a href="#" class="logo">
+        Man<span>Dev.</span>
       </a>
 
-      <!-- NAVIGATION MENU -->
-      <nav class="nav-menu" id="nav-menu">
+      <!-- MENU -->
+      <div class="nav-menu">
 
         <ul class="nav-list">
 
-          <li class="nav-item">
+          <li>
             <a href="#home" class="nav-link active">
               Home
             </a>
           </li>
 
-          <li class="nav-item">
+          <li>
             <a href="#about" class="nav-link">
               About
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="#skills" class="nav-link">
-              Skills
+          <li>
+            <a href="#journey" class="nav-link">
+              Journey
             </a>
           </li>
 
-          <li class="nav-item">
+          <li>
+            <a href="#services" class="nav-link">
+              Services
+            </a>
+          </li>
+
+          <li>
             <a href="#project" class="nav-link">
               Project
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="#education" class="nav-link">
-              Education
-            </a>
-          </li>
-
-          <li class="nav-item">
+          <li>
             <a href="#contact" class="nav-link">
               Contact
             </a>
@@ -65,121 +182,106 @@
 
         </ul>
 
-      </nav>
-
-      <!-- HEADER ACTION -->
-      <div class="nav-action">
-
-        <a href="#contact" class="nav-btn">
-          Hire Me
-        </a>
-
-        <!-- MOBILE MENU BUTTON -->
-        <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
-          <i class="ri-menu-3-line"></i>
-        </button>
-
       </div>
 
-    </div>
+      <!-- THEME TOGGLE -->
+      <div class="theme-toggle" id="theme-toggle">
+        <i class="ri-moon-line"></i>
+      </div>
+
+    </nav>
 
   </header>
 
-  <!-- ================= HOME ================= -->
+
+  <!-- ================= HOME SECTION ================= -->
   <section class="home" id="home">
 
     <div class="home-container">
 
-      <!-- HOME CONTENT -->
-      <div class="home-content">
+      <!-- LEFT -->
+      <div class="home-content reveal-item">
 
-        <span class="home-badge">
-          👋 Halo, Saya
+        <span class="home-tag">
+          PORTFOLIO 2026
         </span>
 
         <h1 class="home-title">
-          Daniel Fendisa
+          Arman Muharrir
         </h1>
 
-        <h2 class="home-subtitle">
-          Mahasiswa Teknik Informatika
-        </h2>
+        <div class="running-text">
 
-        <p class="home-description">
-          Saya adalah mahasiswa Teknik Informatika Universitas Jabal Ghafur
-          yang memiliki ketertarikan dalam pengembangan website, desain UI/UX,
-          dan teknologi digital. Saya senang membangun tampilan web yang modern,
-          interaktif, dan mudah digunakan.
-        </p>
+          <div class="running-track">
+            <span>Mahasiswa Informatika</span>
+            <span>Frontend Developer</span>
+            <span>UI Designer</span>
+            <span>Creative Thinker</span>
 
-        <!-- HOME BUTTONS -->
-        <div class="home-buttons">
-
-          <a href="#project" class="home-btn primary">
-            Lihat Project
-            <i class="ri-arrow-right-up-line"></i>
-          </a>
-
-          <a href="#contact" class="home-btn secondary">
-            Hubungi Saya
-          </a>
+            <span>Mahasiswa Informatika</span>
+            <span>Frontend Developer</span>
+            <span>UI Designer</span>
+            <span>Creative Thinker</span>
+          </div>
 
         </div>
 
-        <!-- HOME STATS -->
-        <div class="home-stats">
+        <p class="home-description">
+          Membangun website modern dengan visual clean,
+          elegant, dan pengalaman interaktif yang terasa
+          premium di setiap detail.
+        </p>
 
-          <div class="stat-box">
-            <h3>10+</h3>
-            <p>Project</p>
-          </div>
+        <div class="home-buttons">
 
-          <div class="stat-box">
-            <h3>2+</h3>
-            <p>Tahun Belajar</p>
-          </div>
+          <a href="#" class="home-btn">
+            Explore Portfolio
+          </a>
 
-          <div class="stat-box">
-            <h3>100%</h3>
-            <p>Semangat</p>
-          </div>
+          <a href="#" class="home-link">
+            Scroll Down
+          </a>
 
         </div>
 
       </div>
 
-      <!-- HOME IMAGE -->
-      <div class="home-image">
+      <!-- RIGHT -->
+      <div class="home-visual reveal-item">
 
-        <div class="image-card">
+        <div class="visual-orbit"></div>
 
-          <div class="image-bg"></div>
+        <div class="visual-image">
 
-          <img src="img/pp1.png" alt="Foto Daniel Fendisa">
+          <div class="visual-overlay"></div>
+          <div class="visual-glass"></div>
+          <div class="visual-noise"></div>
 
-          <!-- FLOATING SKILLS -->
-          <div class="floating-skill skill-1">
-            HTML
-          </div>
+          <img src="./img/pp1tppng.png" alt="ArmanMuharrir">
 
-          <div class="floating-skill skill-2">
-            CSS
-          </div>
-
-          <div class="floating-skill skill-3">
-            JS
-          </div>
-
-          <!-- MINI CARD -->
-          <div class="mini-card">
-            <i class="ri-code-s-slash-line"></i>
-            <div>
-              <h4>Web Developer</h4>
-              <p>Creative Portfolio</p>
-            </div>
+          <div class="visual-badge">
+            Frontend Developer
           </div>
 
         </div>
+
+        <div class="visual-card card-1">
+          <span>Mahasiswa</span>
+        </div>
+
+        <div class="tech-circle html-icon">
+          <i class="ri-html5-fill"></i>
+        </div>
+
+        <div class="tech-circle css-icon">
+          <i class="ri-css3-fill"></i>
+        </div>
+
+        <div class="tech-circle js-icon">
+          <i class="ri-javascript-fill"></i>
+        </div>
+
+        <div class="circle-blur"></div>
 
       </div>
 
@@ -192,78 +294,175 @@
 
     <div class="about-container">
 
-      <!-- ABOUT IMAGE -->
-      <div class="about-image">
+      <!-- ================= LEFT ================= -->
+      <div class="about-image reveal-item">
 
-        <div class="about-card">
+        <!-- ORBIT -->
+        <div class="about-orbit orbit-one"></div>
+        <div class="about-orbit orbit-two"></div>
 
-          <img src="img/pp2.jpeg" alt="Tentang Daniel Fendisa">
+        <!-- IMAGE -->
+        <div class="about-image-box">
+          <img src="img/image.png" alt="ArmanMuharrir">
 
-          <div class="about-badge">
-            <i class="ri-graduation-cap-line"></i>
-            <span>Informatics Student</span>
-          </div>
+        </div>
 
+        <!-- FLOATING CARD -->
+        <div class="about-card about-card-1">
+          <span>Creative Developer</span>
+        </div>
+
+        <div class="about-card about-card-2">
+          <span>Elegant Interface</span>
         </div>
 
       </div>
 
-      <!-- ABOUT CONTENT -->
-      <div class="about-content">
+      <!-- ================= RIGHT ================= -->
+      <div class="about-content reveal-item">
 
-        <span class="section-badge">
-          Tentang Saya
+        <!-- TAG -->
+        <span class="about-tag">
+          ABOUT ME
         </span>
 
-        <h2 class="section-title">
-          Mahasiswa Teknik Informatika yang Tertarik Pada Dunia Digital
+        <!-- TITLE -->
+        <h2 class="about-title">
+          Building modern digital
+          experiences with elegant
+          visual direction.
         </h2>
 
+        <!-- DESCRIPTION -->
         <p class="about-description">
-          Saya adalah Daniel Fendisa, mahasiswa Teknik Informatika di Universitas
-          Jabal Ghafur. Saya memiliki minat dalam pengembangan website, desain
-          antarmuka, serta teknologi digital yang dapat membantu menyelesaikan
-          masalah di kehidupan sehari-hari.
+          Saya seorang mahasiswa informatika yang fokus
+          membangun website modern dengan tampilan clean,
+          interaktif, dan detail visual yang terasa premium.
+          Menggabungkan frontend, design, dan pengalaman
+          pengguna menjadi satu kesatuan yang nyaman dilihat.
         </p>
 
-        <p class="about-description">
-          Dalam proses belajar, saya terus mengembangkan kemampuan dalam HTML,
-          CSS, JavaScript, UI/UX, dan dasar-dasar pengembangan aplikasi. Saya
-          percaya bahwa teknologi bukan hanya tentang kode, tetapi juga tentang
-          bagaimana membuat solusi yang bermanfaat, rapi, dan mudah digunakan.
-        </p>
+<!-- ================= INFO ================= -->
+<div class="about-circles">
 
-        <!-- ABOUT INFO -->
-        <div class="about-info">
+  <!-- FRONTEND -->
+  <div class="circle-card">
 
-          <div class="info-item">
-            <span>Nama</span>
-            <h4>Daniel Fendisa</h4>
-          </div>
+    <!-- ICON -->
+    <div class="circle-icon">
+      <i class="ri-code-s-slash-line"></i>
+    </div>
 
-          <div class="info-item">
-            <span>Jurusan</span>
-            <h4>Teknik Informatika</h4>
-          </div>
+    <!-- PROGRESS -->
+    <div class="circle-progress" data-progress="90">
 
-          <div class="info-item">
-            <span>Kampus</span>
-            <h4>Universitas Jabal Ghafur</h4>
-          </div>
+      <svg>
+        <circle cx="70" cy="70" r="60"></circle>
 
-          <div class="info-item">
-            <span>Fokus</span>
-            <h4>Web Development</h4>
-          </div>
+        <circle
+          cx="70"
+          cy="70"
+          r="60"
+          class="progress-circle">
+        </circle>
+      </svg>
 
-        </div>
+      <!-- VALUE -->
+      <div class="circle-value">
+        90%
+      </div>
 
-        <!-- ABOUT BUTTON -->
-        <div class="about-action">
+    </div>
 
-          <a href="#contact" class="about-btn">
-            Mari Terhubung
-            <i class="ri-arrow-right-up-line"></i>
+    <!-- TITLE -->
+    <h3>
+      Frontend
+    </h3>
+
+  </div>
+
+  <!-- UI UX -->
+  <div class="circle-card">
+
+    <!-- ICON -->
+    <div class="circle-icon">
+      <i class="ri-layout-4-line"></i>
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="circle-progress" data-progress="85">
+
+      <svg>
+        <circle cx="70" cy="70" r="60"></circle>
+
+        <circle
+          cx="70"
+          cy="70"
+          r="60"
+          class="progress-circle">
+        </circle>
+      </svg>
+
+      <!-- VALUE -->
+      <div class="circle-value">
+        85%
+      </div>
+
+    </div>
+
+    <!-- TITLE -->
+    <h3>
+      UI / UX
+    </h3>
+
+  </div>
+
+  <!-- CREATIVE -->
+  <div class="circle-card">
+
+    <!-- ICON -->
+    <div class="circle-icon">
+      <i class="ri-lightbulb-flash-line"></i>
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="circle-progress" data-progress="95">
+
+      <svg>
+        <circle cx="70" cy="70" r="60"></circle>
+
+        <circle
+          cx="70"
+          cy="70"
+          r="60"
+          class="progress-circle">
+        </circle>
+      </svg>
+
+      <!-- VALUE -->
+      <div class="circle-value">
+        95%
+      </div>
+
+    </div>
+
+    <!-- TITLE -->
+    <h3>
+      Creative
+    </h3>
+
+  </div>
+
+</div>
+
+        <!-- BUTTON -->
+        <div class="about-buttons">
+
+          <a href="https://drive.google.com/uc?export=download&id=1tS_2uQlSP3eJhRSQzx5L_DeBXn1lXk4J"
+            class="about-btn">Download CV</a>
+
+          <a href="#" class="about-link">
+            Explore More
           </a>
 
         </div>
@@ -274,424 +473,602 @@
 
   </section>
 
-  <!-- ================= SKILLS ================= -->
-  <section class="skills" id="skills">
+  <!-- ================= JOURNEY ================= -->
+  <section class="journey" id="journey">
 
-    <div class="skills-container">
+    <div class="journey-bg-text">
+      JOURNEY
+    </div>
 
-      <!-- SKILLS TOP -->
-      <div class="skills-top">
+    <div class="journey-container">
 
-        <span class="section-badge">
-          Keahlian Saya
+      <div class="journey-top reveal-item">
+
+        <span class="journey-tag">
+          MY EDUCATION JOURNEY
         </span>
 
-        <h2 class="section-title">
-          Skill yang Saya Pelajari dalam Dunia Web Development
+        <h2 class="journey-title">
+          A learning path that shaped
+          my digital mindset.
         </h2>
 
-        <p class="skills-description">
-          Beberapa kemampuan yang sedang saya kembangkan dalam bidang teknologi,
-          mulai dari struktur website, tampilan antarmuka, interaksi pengguna,
-          hingga dasar pengembangan aplikasi modern.
+        <p class="journey-description">
+          Perjalanan pendidikan dan proses belajar yang membentuk cara saya
+          memahami teknologi, desain, dan pengembangan website modern.
         </p>
 
       </div>
 
-      <!-- SKILLS CONTENT -->
-      <div class="skills-content">
+      <div class="journey-zigzag">
 
-        <!-- SKILL CARD 1 -->
-        <div class="skill-card">
+        <div class="journey-center-line"></div>
 
-          <div class="skill-icon">
-            <i class="ri-html5-line"></i>
-          </div>
+        <!-- SMP -->
+        <div class="journey-zigzag-item left reveal-item">
 
-          <div class="skill-info">
-            <h3>HTML</h3>
-            <p>Membuat struktur halaman website yang rapi dan semantic.</p>
+          <div class="journey-dot"></div>
 
-            <div class="skill-progress">
-              <span style="width: 90%;"></span>
+          <div class="journey-card">
+
+            <!-- LOGO -->
+            <div class="journey-logo">
+              <img src="/img/mtsn5pidie.png" alt="Logo SMP">
             </div>
 
-            <h4>90%</h4>
-          </div>
-
-        </div>
-
-        <!-- SKILL CARD 2 -->
-        <div class="skill-card">
-
-          <div class="skill-icon">
-            <i class="ri-css3-line"></i>
-          </div>
-
-          <div class="skill-info">
-            <h3>CSS</h3>
-            <p>Mendesain tampilan website yang modern, responsive, dan menarik.</p>
-
-            <div class="skill-progress">
-              <span style="width: 85%;"></span>
-            </div>
-
-            <h4>85%</h4>
-          </div>
-
-        </div>
-
-        <!-- SKILL CARD 3 -->
-        <div class="skill-card">
-
-          <div class="skill-icon">
-            <i class="ri-javascript-line"></i>
-          </div>
-
-          <div class="skill-info">
-            <h3>JavaScript</h3>
-            <p>Membuat website lebih interaktif dengan logika dan animasi sederhana.</p>
-
-            <div class="skill-progress">
-              <span style="width: 75%;"></span>
-            </div>
-
-            <h4>75%</h4>
-          </div>
-
-        </div>
-
-        <!-- SKILL CARD 4 -->
-        <div class="skill-card">
-
-          <div class="skill-icon">
-            <i class="ri-layout-4-line"></i>
-          </div>
-
-          <div class="skill-info">
-            <h3>UI/UX Design</h3>
-            <p>Mendesain tampilan yang nyaman dilihat dan mudah digunakan.</p>
-
-            <div class="skill-progress">
-              <span style="width: 80%;"></span>
-            </div>
-
-            <h4>80%</h4>
-          </div>
-
-        </div>
-
-        <!-- SKILL CARD 5 -->
-        <div class="skill-card">
-
-          <div class="skill-icon">
-            <i class="ri-database-2-line"></i>
-          </div>
-
-          <div class="skill-info">
-            <h3>Database</h3>
-            <p>Memahami dasar penyimpanan data dan struktur database sederhana.</p>
-
-            <div class="skill-progress">
-              <span style="width: 70%;"></span>
-            </div>
-
-            <h4>70%</h4>
-          </div>
-
-        </div>
-
-        <!-- SKILL CARD 6 -->
-        <div class="skill-card">
-
-          <div class="skill-icon">
-            <i class="ri-git-branch-line"></i>
-          </div>
-
-          <div class="skill-info">
-            <h3>Git & GitHub</h3>
-            <p>Mengelola project, menyimpan kode, dan melakukan publikasi website.</p>
-
-            <div class="skill-progress">
-              <span style="width: 72%;"></span>
-            </div>
-
-            <h4>72%</h4>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ================= PROJECT ================= -->
-  <section class="project" id="project">
-
-    <div class="project-container">
-
-      <!-- PROJECT TOP -->
-      <div class="project-top">
-
-        <span class="section-badge">
-          Portfolio Project
-        </span>
-
-        <h2 class="section-title">
-          Beberapa Project yang Pernah Saya Buat
-        </h2>
-
-        <p class="project-description">
-          Berikut beberapa project website yang saya buat sebagai bagian dari proses
-          belajar dan pengembangan skill di bidang web development.
-        </p>
-
-      </div>
-
-<!-- PROJECT GRID -->
-<div class="project-grid">
-
-  <!-- PROJECT 1 -->
-  <div class="project-card">
-
-    <div class="project-image">
-      <span class="project-number">01</span>
-      <img src="img/PJ1.jpeg" alt="Website Futsal Kramat Dalam">
-    </div>
-
-    <div class="project-content">
-
-      <span class="project-category">
-        Website Sekitar
-      </span>
-
-      <h3 class="project-title">
-        Website Futsal Kramat Dalam
-      </h3>
-
-      <p class="project-text">
-        Website tersebut merupakan landing page profil untuk tempat olahraga “Futsal Kramat” yang digunakan
-        sebagai media promosi digital.
-        Website ini menampilkan informasi tentang fasilitas futsal serta
-        dokumentasi foto dan video lapangan.
-      </p>
-
-      <div class="project-tech">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-      </div>
-
-      <a href="https://danieldafenaza-sudo.github.io/futsal-kramat/#media" class="project-btn" target="_blank">
-        View Project
-        <i class="ri-arrow-right-up-line"></i>
-      </a>
-
-    </div>
-
-  </div>
-
-  <!-- PROJECT 2 -->
-  <div class="project-card">
-
-    <div class="project-image">
-      <span class="project-number">02</span>
-      <img src="img/PJ2.png" alt="Mobile App E-Wallet">
-    </div>
-
-    <div class="project-content">
-
-      <span class="project-category">
-        Mobile App E-Wallet
-      </span>
-
-      <h3 class="project-title">
-        Mobile App E-Wallet
-      </h3>
-
-      <p class="project-text">
-        Aplikasi web e-wallet atau dompet digital yang dibangun menggunakan framework Flask di Python dan dirancang
-        menyerupai tampilan aplikasi fintech modern seperti GoPay dalam versi web.
-      </p>
-
-      <div class="project-tech">
-        <span>Python</span>
-        <span>Flask</span>
-        <span>SQLite</span>
-      </div>
-
-      <a href="https://github.com/danieldafenaza-sudo/wallet-api" class="project-btn" target="_blank">
-        View Project
-        <i class="ri-arrow-right-up-line"></i>
-      </a>
-
-    </div>
-
-  </div>
-
-  <!-- PROJECT 3 -->
-  <div class="project-card">
-
-    <div class="project-image">
-      <span class="project-number">03</span>
-      <img src="img/PJ3.png" alt="Use Case Diagram Sistem Perpustakaan">
-    </div>
-
-    <div class="project-content">
-
-      <span class="project-category">
-        Use Case Diagram
-      </span>
-
-      <h3 class="project-title">
-        Use Case Diagram Sistem Perpustakaan
-      </h3>
-
-      <p class="project-text">
-        Use case diagram ini menggambarkan alur interaksi antara pengguna dengan sistem perpustakaan. Sistem ini
-        memiliki dua aktor utama, yaitu Pelajar dan Petugas/Admin. Pelajar dapat melakukan login, mencari buku,
-        meminjam buku, mengembalikan buku, serta melihat riwayat peminjaman.
-      </p>
-
-      <div class="project-tech">
-        <span>Draw.io</span>
-        <span>Use Case</span>
-        <span>Perpustakaan</span>
-      </div>
-
-<a href="usecase-perpustakaan.html" class="project-btn" target="_blank">
-  View Project
-  <i class="ri-arrow-right-up-line"></i>
-</a>
-
-    </div>
-
-  </div>
-
-</div>
-
-    </div>
-
-  </section>
-
-  <!-- ================= EDUCATION ================= -->
-  <section class="education" id="education">
-
-    <div class="education-container">
-
-      <!-- EDUCATION TOP -->
-      <div class="education-top">
-
-        <span class="section-badge">
-          Pendidikan
-        </span>
-
-        <h2 class="section-title">
-          Riwayat Pendidikan dan Perjalanan Belajar
-        </h2>
-
-        <p class="education-description">
-          Perjalanan pendidikan saya menjadi dasar dalam mengembangkan kemampuan
-          di bidang teknologi, pemrograman, dan pengembangan website.
-        </p>
-
-      </div>
-
-      <!-- EDUCATION CONTENT -->
-      <div class="education-content">
-
-        <!-- EDUCATION CARD 1 -->
-        <div class="education-card">
-
-          <div class="education-icon">
-            <i class="ri-graduation-cap-line"></i>
-          </div>
-
-          <div class="education-info">
-
-            <span class="education-year">
-              Sekarang
+            <span class="journey-year">
+              MTSN 5 PIDIE
             </span>
 
             <h3>
+              Early Learning Phase
+            </h3>
+
+            <p>
+              Masa awal mulai mengenal dunia teknologi, komputer,
+              dan rasa penasaran terhadap cara kerja digital.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- SMA / SMK -->
+        <div class="journey-zigzag-item right reveal-item">
+
+          <div class="journey-dot"></div>
+
+          <div class="journey-card">
+
+            <!-- LOGO -->
+            <div class="journey-logo">
+              <img src="/img/smk1sigli.png" alt="Logo SMK">
+            </div>
+
+            <span class="journey-year">
+              SMK 1 SIGLI
+            </span>
+
+            <h3>
+              TKJ (Teknik Komputer Dan Jaringan)
+            </h3>
+
+            <p>
+              Mulai memperdalam penggunaan komputer, desain sederhana,
+              dan memahami dasar-dasar teknologi secara lebih serius.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- UNIVERSITAS -->
+        <div class="journey-zigzag-item left reveal-item">
+
+          <div class="journey-dot"></div>
+
+          <div class="journey-card">
+
+            <!-- LOGO -->
+            <div class="journey-logo">
+              <img src="/img/unigha.png" alt="Universitas Jabal Ghafur">
+            </div>
+
+            <span class="journey-year">
               Universitas Jabal Ghafur
+            </span>
+
+            <h3>
+              Teknik Informatika (S1)
             </h3>
 
-            <h4>
-              Teknik Informatika
-            </h4>
-
             <p>
-              Saat ini saya menempuh pendidikan di jurusan Teknik Informatika.
-              Di sini saya mempelajari dasar pemrograman, pengembangan web,
-              database, UI/UX, serta teknologi digital modern.
+              Melanjutkan pendidikan di Teknik Informatika dan mulai
+              membangun project website, frontend, UI, serta sistem digital.
             </p>
 
           </div>
 
         </div>
 
-        <!-- EDUCATION CARD 2 -->
-        <div class="education-card">
+        <!-- NEXT -->
+        <div class="journey-zigzag-item right reveal-item">
 
-          <div class="education-icon">
-            <i class="ri-school-line"></i>
-          </div>
+          <div class="journey-dot"></div>
 
-          <div class="education-info">
+          <div class="journey-card">
 
-            <span class="education-year">
-              Sebelumnya
+            <!-- LOGO -->
+            <div class="journey-logo">
+              <img src="/img/image.png" alt="AM Logo">
+            </div>
+
+            <span class="journey-year">
+              NEXT
             </span>
 
             <h3>
-              Sekolah Menengah Atas / Kejuruan
+              Creative Developer Journey
             </h3>
 
-            <h4>
-              Pendidikan Menengah
-            </h4>
-
             <p>
-              Pada masa pendidikan menengah, saya mulai membangun dasar pengetahuan,
-              kedisiplinan, dan ketertarikan terhadap dunia teknologi serta komputer.
+              Terus berkembang sebagai developer yang fokus pada website
+              modern, visual premium, dan pengalaman interaktif.
             </p>
 
           </div>
 
         </div>
 
-        <!-- EDUCATION CARD 3 -->
-        <div class="education-card">
+      </div>
 
-          <div class="education-icon">
-            <i class="ri-code-box-line"></i>
-          </div>
+    </div>
 
-          <div class="education-info">
+  </section>
 
-            <span class="education-year">
-              Pengembangan Diri
+  <!-- ================= SERVICES ================= -->
+  <section class="services" id="services">
+
+    <!-- BG TEXT -->
+    <div class="services-bg-text">
+      SERVICES
+    </div>
+
+    <!-- LIGHT -->
+    <div class="services-light"></div>
+
+    <div class="services-container">
+
+      <!-- TOP -->
+      <div class="services-top reveal-item">
+
+        <span class="services-tag">
+          WHAT I DO
+        </span>
+
+        <h2 class="services-title">
+          Turning ideas into elegant
+          digital experiences.
+        </h2>
+
+        <div class="services-line"></div>
+
+        <p class="services-description">
+          Fokus pada visual modern, interaksi smooth,
+          dan pengalaman website yang clean serta premium.
+        </p>
+
+      </div>
+
+      <!-- GRID -->
+      <div class="services-grid">
+
+        <!-- CARD -->
+        <div class="service-card reveal-item">
+
+          <!-- TOP -->
+          <div class="service-head">
+
+            <span class="service-number">
+              01
             </span>
 
-            <h3>
-              Belajar Web Development
+            <div class="service-icon">
+              <i class="ri-layout-4-line"></i>
+            </div>
+
+          </div>
+
+          <!-- CONTENT -->
+          <div class="service-content">
+
+            <h3 class="service-title">
+              UI Design
             </h3>
 
-            <h4>
-              HTML, CSS, JavaScript & UI/UX
-            </h4>
-
-            <p>
-              Selain belajar di kampus, saya juga mengembangkan skill secara mandiri
-              melalui latihan membuat website, eksplorasi desain, dan membangun
-              beberapa project sederhana.
+            <p class="service-text">
+              Mendesain tampilan modern dengan
+              visual clean, elegant, dan nyaman
+              dilihat di berbagai device.
             </p>
 
           </div>
 
+          <!-- BOTTOM -->
+          <div class="service-bottom">
+
+            <a href="https://wa.me/62895429097462" target="_blank" class="service-link">
+
+              Chat WhatsApp
+
+              <i class="ri-arrow-right-up-line"></i>
+
+            </a>
+
+          </div>
+
+          <!-- HOVER LIGHT -->
+          <div class="service-hover"></div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card reveal-item">
+
+          <div class="service-head">
+
+            <span class="service-number">
+              02
+            </span>
+
+            <div class="service-icon">
+              <i class="ri-code-s-slash-line"></i>
+            </div>
+
+          </div>
+
+          <div class="service-content">
+
+            <h3 class="service-title">
+              Frontend Dev
+            </h3>
+
+            <p class="service-text">
+              Membangun website interaktif
+              dengan animasi smooth dan
+              pengalaman modern premium.
+            </p>
+
+          </div>
+
+          <div class="service-bottom">
+
+            <a href="https://wa.me/62895429097462" target="_blank" class="service-link">
+
+              Chat WhatsApp
+
+              <i class="ri-arrow-right-up-line"></i>
+
+            </a>
+
+          </div>
+
+          <div class="service-hover"></div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="service-card reveal-item">
+
+          <div class="service-head">
+
+            <span class="service-number">
+              03
+            </span>
+
+            <div class="service-icon">
+              <i class="ri-flashlight-line"></i>
+            </div>
+
+          </div>
+
+          <div class="service-content">
+
+            <h3 class="service-title">
+              Creative Concept
+            </h3>
+
+            <p class="service-text">
+              Mengembangkan ide visual unik
+              agar website terasa lebih
+              premium dan berbeda.
+            </p>
+
+          </div>
+
+          <div class="service-bottom">
+
+            <a href="https://wa.me/62895429097462" target="_blank" class="service-link">
+
+              Chat WhatsApp
+
+              <i class="ri-arrow-right-up-line"></i>
+
+            </a>
+
+          </div>
+
+          <div class="service-hover"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= RIWAYAT PROJECT ================= -->
+  <section class="riwayat" id="project">
+
+    <div class="riwayat-bg-text"></div>
+
+    <div class="riwayat-container">
+
+      <div class="riwayat-top reveal-item">
+
+        <span class="riwayat-tag">PROJECT HISTORY</span>
+
+        <h2 class="riwayat-title">
+          Selected projects that shaped
+          my creative journey.
+        </h2>
+
+        <div class="riwayat-line"></div>
+
+        <p class="riwayat-description">
+          Beberapa project yang pernah saya buat, mulai dari website portfolio,
+          UMKM, sistem sederhana, hingga tampilan modern berbasis HTML, CSS,
+          dan JavaScript.
+        </p>
+
+      </div>
+
+      <div class="project-filter reveal-item">
+
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="website">Website</button>
+        <button class="filter-btn" data-filter="ui">UI Design</button>
+        <button class="filter-btn" data-filter="system">System</button>
+
+      </div>
+
+      <div class="project-grid">
+
+        <div class="project-card reveal-item" data-category="website">
+          <div class="project-image">
+            <img src="./img/PJ1.png" alt="Portfolio Website">
+            <div class="project-overlay"></div>
+            <span class="project-floating-category">Website</span>
+          </div>
+
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>
+              Website personal modern dengan konsep elegant, animasi smooth,
+              dan layout profesional.
+            </p>
+
+            <div class="project-bottom">
+              <a href="#" class="project-link">
+                View Project
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-hover"></div>
+        </div>
+
+        <div class="project-card reveal-item" data-category="ui">
+          <div class="project-image">
+            <img src="./img/pj5.jpeg" alt="Dashboard UI Concept">
+            <div class="project-overlay"></div>
+            <span class="project-floating-category">Photoboth</span>
+          </div>
+
+          <div class="project-content">
+            <h3>Website Photobox</h3>
+            <p>
+              Konsep dashboard modern dengan card informasi, visual Layout,
+              dan layout responsif.
+            </p>
+
+            <div class="project-bottom">
+              <a href="./website/fotobox-index.html" class="project-link">
+                View Project
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-hover"></div>
+        </div>
+
+        <div class="project-card reveal-item" data-category="website">
+          <div class="project-image">
+            <img src="./img/PJ4.jpeg" alt="Website Warkop Modern">
+            <div class="project-overlay"></div>
+            <span class="project-floating-category">Website</span>
+          </div>
+
+          <div class="project-content">
+            <h3>Website Warkop Modern</h3>
+            <p>
+              Website UMKM dengan tampilan minimalis, menu produk,
+              dan visual clean premium.
+            </p>
+
+            <div class="project-bottom">
+              <a href="#" class="project-link">
+                View Project
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-hover"></div>
+        </div>
+
+        <div class="project-card reveal-item" data-category="system">
+          <div class="project-image">
+            <img src="./img/PJ3.jpeg" alt="E-Wallet System">
+            <div class="project-overlay"></div>
+            <span class="project-floating-category">System</span>
+          </div>
+
+          <div class="project-content">
+            <h3>E-Wallet System</h3>
+            <p>
+              Prototype dompet digital sederhana dengan fitur login,
+              saldo, transfer, dan riwayat transaksi.
+            </p>
+
+            <div class="project-bottom">
+              <a href="#" class="project-link">
+                View Project
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-hover"></div>
+        </div>
+
+        <div class="project-card reveal-item" data-category="website">
+          <div class="project-image">
+            <img src="/img/figmaui.png" alt="Website Futsal">
+            <div class="project-overlay"></div>
+            <span class="project-floating-category">UI/UX</span>
+          </div>
+
+          <div class="project-content">
+            <h3>E-commerce</h3>
+            <p>
+              E-commerce (Electronic Commerce) adalah aktivitas pembelian, penjualan, serta pemasaran barang dan jasa
+              melalui sistem elektronik seperti internet. Ini memungkinkan transaksi terjadi secara daring (online)
+              tanpa perlu tatap muka langsung, sering kali memanfaatkan website, aplikasi, atau platform marketplace
+            </p>
+
+            <div class="project-bottom">
+              <a href="#" class="project-link">
+                View Project
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-hover"></div>
+        </div>
+
+        <div class="project-card reveal-item" data-category="system">
+          <div class="project-image">
+            <img src="/img/supp.png" alt="Supplier Management">
+            <div class="project-overlay"></div>
+            <span class="project-floating-category">System</span>
+          </div>
+
+          <div class="project-content">
+            <h3>Supplier Management</h3>
+            <p>
+              Konsep sistem manajemen supplier dengan data barang,
+              pemasok, transaksi, dan alur database sederhana.
+            </p>
+
+            <div class="project-bottom">
+              <a href="#" class="project-link">
+                View Project
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-hover"></div>
+        </div>
+
+        <div class="project-card reveal-item" data-category="ui">
+          <div class="project-image">
+            <img src="/img/landingpage.png" alt="Landing Page Concept">
+            <div class="project-overlay"></div>
+            <span class="project-floating-category">UI Design</span>
+          </div>
+
+          <div class="project-content">
+            <h3>Landing Page Concept</h3>
+            <p>
+              Desain landing page dengan struktur hero, benefit,
+              CTA, dan visual simple tapi premium.
+            </p>
+
+            <div class="project-bottom">
+              <a href="#" class="project-link">
+                View Project
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-hover"></div>
+        </div>
+
+        <div class="project-card reveal-item" data-category="website">
+          <div class="project-image">
+            <img src="/img/coffeshop.png" alt="Coffee Shop Website">
+            <div class="project-overlay"></div>
+            <span class="project-floating-category">Website</span>
+          </div>
+
+          <div class="project-content">
+            <h3>Coffee Shop Website</h3>
+            <p>
+              Website coffee shop dengan menu interaktif, cart sederhana,
+              dan tampilan produk clean.
+            </p>
+
+            <div class="project-bottom">
+              <a href="#" class="project-link">
+                View Project
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-hover"></div>
+        </div>
+
+        <div class="project-card reveal-item" data-category="system">
+          <div class="project-image">
+            <img src="/img/elearning.png" alt="E-Learning App Concept">
+            <div class="project-overlay"></div>
+            <span class="project-floating-category">System</span>
+          </div>
+
+          <div class="project-content">
+            <h3>E-Learning App Concept</h3>
+            <p>
+              Konsep aplikasi pembelajaran dengan fitur video, rating,
+              profil, dan halaman informasi.
+            </p>
+
+            <div class="project-bottom">
+              <a href="#" class="project-link">
+                View Project
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-hover"></div>
         </div>
 
       </div>
@@ -705,207 +1082,200 @@
 
     <div class="contact-container">
 
-      <!-- CONTACT TOP -->
-      <div class="contact-top">
+      <!-- LEFT -->
+      <div class="contact-content reveal-item">
 
-        <span class="section-badge">
-          Kontak Saya
+        <span class="contact-tag">
+          CONTACT
         </span>
 
-        <h2 class="section-title">
-          Tertarik untuk Terhubung atau Bekerja Sama?
+        <h2 class="contact-title">
+          Let’s create something
+          elegant together.
         </h2>
 
         <p class="contact-description">
-          Silakan hubungi saya melalui form atau kontak yang tersedia. Saya terbuka
-          untuk diskusi project, kerja sama, maupun berbagi informasi seputar dunia teknologi.
+          Punya ide website, project, atau ingin kerja sama?
+          Silakan hubungi saya dan mari bangun sesuatu yang
+          clean, modern, dan profesional.
         </p>
 
-      </div>
-
-      <!-- CONTACT CONTENT -->
-      <div class="contact-content">
-
-        <!-- CONTACT INFO -->
         <div class="contact-info">
 
-          <div class="contact-card">
+          <a href="mailto:armanulf009@gmail.com" class="contact-item">
+            <i class="ri-mail-line"></i>
+            <span>armanulf009@gmail.com</span>
+          </a>
 
-            <div class="contact-icon">
-              <i class="ri-mail-line"></i>
-            </div>
+          <a href="https://wa.me/62895429097462" target="_blank" class="contact-item">
+            <i class="ri-whatsapp-line"></i>
+            <span>WhatsApp</span>
+          </a>
 
-            <div>
-              <span>Email</span>
-              <h3>daniel.fendisa@gmail.com</h3>
-            </div>
-
-          </div>
-
-          <div class="contact-card">
-
-            <div class="contact-icon">
-              <i class="ri-phone-line"></i>
-            </div>
-
-            <div>
-              <span>Telepon</span>
-              <h3>+62 812 3456 7890</h3>
-            </div>
-
-          </div>
-
-          <div class="contact-card">
-
-            <div class="contact-icon">
-              <i class="ri-map-pin-line"></i>
-            </div>
-
-            <div>
-              <span>Lokasi</span>
-              <h3>Pidie, Aceh, Indonesia</h3>
-            </div>
-
-          </div>
-
-          <div class="contact-social">
-
-            <a href="#" aria-label="Instagram">
-              <i class="ri-instagram-line"></i>
-            </a>
-
-            <a href="#" aria-label="GitHub">
-              <i class="ri-github-line"></i>
-            </a>
-
-            <a href="#" aria-label="LinkedIn">
-              <i class="ri-linkedin-box-line"></i>
-            </a>
-
-          </div>
+          <a href="#" class="contact-item">
+            <i class="ri-map-pin-line"></i>
+            <span>Indonesia</span>
+          </a>
 
         </div>
 
-        <!-- CONTACT FORM -->
-        <form class="contact-form">
-
-          <div class="form-group">
-            <label for="name">Nama Lengkap</label>
-            <input type="text" id="name" placeholder="Masukkan nama kamu">
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Masukkan email kamu">
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Subjek</label>
-            <input type="text" id="subject" placeholder="Tulis subjek pesan">
-          </div>
-
-          <div class="form-group">
-            <label for="message">Pesan</label>
-            <textarea id="message" rows="6" placeholder="Tulis pesan kamu di sini"></textarea>
-          </div>
-
-          <button type="submit" class="contact-btn">
-            Kirim Pesan
-            <i class="ri-send-plane-line"></i>
-          </button>
-
-        </form>
-
       </div>
+
+<!-- RIGHT -->
+<div class="contact-card reveal-item">
+
+  <div class="contact-card-glow"></div>
+
+  <div class="contact-profile">
+
+    <div class="contact-avatar">
+      <img src="./img/pp1.png" alt="Arman Muharrir">
+    </div>
+
+    <div>
+      <span class="contact-card-label">
+        AVAILABLE FOR PROJECT
+      </span>
+
+      <h3>
+        Arman Muharrir
+      </h3>
+
+      <p class="contact-role">
+        Frontend Developer • UI Designer
+      </p>
+    </div>
+
+  </div>
+
+  <p class="contact-card-text">
+    Siap bantu bikin website modern, clean, responsive,
+    dan punya visual yang terasa premium.
+  </p>
+
+  <div class="contact-status">
+    <span></span>
+    Online for collaboration
+  </div>
+
+  <a href="https://wa.me/62895429097462" target="_blank" class="contact-btn">
+    Chat WhatsApp
+    <i class="ri-arrow-right-up-line"></i>
+  </a>
+
+  <div class="contact-mini-info">
+
+    <div>
+      <strong>24h</strong>
+      <span>Response</span>
+    </div>
+
+    <div>
+      <strong>Modern</strong>
+      <span>Style</span>
+    </div>
+
+  </div>
+
+  <div class="contact-decoration"></div>
+
+</div>
 
     </div>
 
   </section>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="footer">
+  <footer class="footer reveal-item">
 
     <div class="footer-container">
 
-      <!-- FOOTER TOP -->
+      <!-- TOP -->
       <div class="footer-top">
 
         <!-- BRAND -->
         <div class="footer-brand">
 
           <a href="#home" class="footer-logo">
-            <span>D</span>
-            Daniel Fendisa
+            ArmanMuharrir
           </a>
 
-          <p>
-            Membangun website bukan hanya tentang menulis kode,
-            tapi tentang menciptakan pengalaman digital yang rapi,
-            berguna, dan mudah dipahami.
+          <p class="footer-text">
+            Membangun website modern dengan visual elegant,
+            clean, dan pengalaman digital yang premium.
           </p>
 
         </div>
 
-        <!-- FOOTER MENU -->
-        <div class="footer-menu">
+        <!-- MENU -->
+        <div class="footer-links">
 
-          <h4>Navigasi</h4>
+          <h3>
+            Navigation
+          </h3>
 
-          <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#project">Project</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-          </div>
+          <a href="#home">
+            Home
+          </a>
+
+          <a href="#about">
+            About
+          </a>
+
+          <a href="#services">
+            Services
+          </a>
+
+          <a href="#project">
+            Project
+          </a>
+
+          <a href="#contact">
+            Contact
+          </a>
 
         </div>
 
-        <!-- FOOTER INFO -->
-        <div class="footer-info">
+        <!-- SOCIAL -->
+        <div class="footer-social">
 
-          <h4>Currently</h4>
+          <h3>
+            Social
+          </h3>
 
-          <div class="footer-status">
-            <span></span>
-            Available for Learning & Projects
-          </div>
+          <a href="#">
+            Instagram
+          </a>
 
-          <p>
-            Mahasiswa Teknik Informatika
-            Universitas Jabal Ghafur.
-          </p>
+          <a href="#">
+            GitHub
+          </a>
 
-          <div class="footer-social">
-            <a href="#" aria-label="Instagram">
-              <i class="ri-instagram-line"></i>
-            </a>
+          <a href="#">
+            LinkedIn
+          </a>
 
-            <a href="#" aria-label="GitHub">
-              <i class="ri-github-line"></i>
-            </a>
-
-            <a href="#" aria-label="LinkedIn">
-              <i class="ri-linkedin-box-line"></i>
-            </a>
-          </div>
+          <a href="https://wa.me/62895429097462" target="_blank">
+            WhatsApp
+          </a>
 
         </div>
 
       </div>
 
-      <!-- FOOTER BOTTOM -->
+      <!-- LINE -->
+      <div class="footer-line"></div>
+
+      <!-- BOTTOM -->
       <div class="footer-bottom">
 
         <p>
-          © 2026 Daniel Fendisa. Built with focus, coffee, and clean code.
+          © 2026 Arman Muharrir — All Rights Reserved.
         </p>
 
-        <a href="#home" class="back-top">
-          Back to Top
-          <i class="ri-arrow-up-line"></i>
-        </a>
+        <span>
+          Designed with elegance & passion.
+        </span>
 
       </div>
 
@@ -913,7 +1283,7 @@
 
   </footer>
 
-  <script src="java.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
