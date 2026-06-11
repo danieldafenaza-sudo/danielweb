@@ -1702,7 +1702,7 @@ button {
 
 /* ================= PROJECT SECTION ================= */
 .project {
-  padding: 95px 7%;
+  padding: 95px 5%;
 
   background:
     radial-gradient(circle at top left, rgba(255, 186, 9, 0.14), transparent 32%),
@@ -1753,7 +1753,7 @@ button {
 /* ================= PROJECT CONTAINER ================= */
 .project-container {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1320px;
   margin: 0 auto;
 
   position: relative;
@@ -1793,20 +1793,24 @@ button {
 /* ================= PROJECT GRID ================= */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
 }
 
 /* ================= PROJECT CARD ================= */
 .project-card {
   position: relative;
 
+  width: 100%;
+  min-width: 0;
+
   background: rgba(255, 255, 255, 0.72);
 
   border: 2px solid rgba(31, 31, 31, 0.1);
   border-radius: 28px;
 
-  overflow: hidden;
+  overflow: visible;
 
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
 
@@ -1830,9 +1834,9 @@ button {
   position: relative;
 
   width: 100%;
-  height: 230px;
+  height: 205px;
 
-  padding: 18px;
+  padding: 16px;
 
   background:
     linear-gradient(
@@ -1843,6 +1847,7 @@ button {
     #FFBA09;
 
   border-bottom: 2px solid rgba(31, 31, 31, 0.12);
+  border-radius: 28px 28px 0 0;
 
   overflow: visible;
 }
@@ -1865,9 +1870,9 @@ button {
   background: #FCF6F5;
 
   border: 2px solid #1f1f1f;
-  border-radius: 22px;
+  border-radius: 20px;
 
-  box-shadow: 8px 8px 0 rgba(31, 31, 31, 0.9);
+  box-shadow: 7px 7px 0 rgba(31, 31, 31, 0.9);
 
   transition: 0.45s ease;
 }
@@ -1877,20 +1882,15 @@ button {
   transform: scale(1.03) translateY(-3px);
 }
 
-/* PROJECT CARD BIAR NOMOR TIDAK TERPOTONG */
-.project-card {
-  overflow: visible;
-}
-
 /* PROJECT NUMBER */
 .project-number {
   position: absolute;
   top: -22px;
-  left: 24px;
+  left: 22px;
   z-index: 5;
 
-  width: 58px;
-  height: 58px;
+  width: 56px;
+  height: 56px;
 
   display: flex;
   align-items: center;
@@ -1902,7 +1902,7 @@ button {
   border: 3px solid #1f1f1f;
   border-radius: 18px;
 
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 900;
 
   box-shadow: 0 7px 0 #1f1f1f;
@@ -1910,7 +1910,7 @@ button {
 
 /* ================= PROJECT CONTENT ================= */
 .project-content {
-  padding: 34px 24px 24px;
+  padding: 30px 20px 22px;
 
   background: rgba(255, 255, 255, 0.78);
 
@@ -1921,7 +1921,7 @@ button {
 .project-category {
   display: inline-flex;
 
-  padding: 7px 13px;
+  padding: 7px 12px;
 
   background: rgba(255, 186, 9, 0.18);
   color: #1f1f1f;
@@ -1929,7 +1929,7 @@ button {
   border: 1px solid rgba(31, 31, 31, 0.1);
   border-radius: 999px;
 
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 900;
 
   margin-bottom: 13px;
@@ -1939,7 +1939,7 @@ button {
 .project-title {
   color: #1f1f1f;
 
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 900;
   line-height: 1.25;
 
@@ -1950,9 +1950,9 @@ button {
 .project-text {
   color: #555;
 
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  line-height: 1.65;
+  line-height: 1.6;
 
   margin-bottom: 18px;
 }
@@ -1972,7 +1972,7 @@ button {
   align-items: center;
   justify-content: center;
 
-  padding: 7px 11px;
+  padding: 7px 10px;
 
   background: #FCF6F5;
   color: #1f1f1f;
@@ -1980,7 +1980,7 @@ button {
   border: 1px solid rgba(31, 31, 31, 0.13);
   border-radius: 999px;
 
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 800;
 }
 
@@ -2000,7 +2000,7 @@ button {
 
   border-radius: 999px;
 
-  font-size: 0.84rem;
+  font-size: 0.8rem;
   font-weight: 900;
 
   box-shadow: 0 6px 0 #FFBA09;
@@ -2018,6 +2018,28 @@ button {
 }
 
 /* ================= RESPONSIVE PROJECT ================= */
+@media screen and (max-width: 1200px) {
+  .project-container {
+    max-width: 1120px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-image {
+    height: 220px;
+  }
+
+  .project-title {
+    font-size: 1.08rem;
+  }
+
+  .project-text {
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 980px) {
   .project {
     padding: 80px 5%;
@@ -2025,6 +2047,10 @@ button {
 
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-image {
+    height: 215px;
   }
 }
 
@@ -2045,6 +2071,7 @@ button {
   .project-image {
     height: 215px;
     padding: 15px;
+    border-radius: 24px 24px 0 0;
   }
 
   .project-number {
@@ -2061,6 +2088,14 @@ button {
   .project-content {
     padding: 32px 20px 22px;
     border-radius: 0 0 24px 24px;
+  }
+
+  .project-title {
+    font-size: 1.05rem;
+  }
+
+  .project-text {
+    font-size: 0.78rem;
   }
 }
 
